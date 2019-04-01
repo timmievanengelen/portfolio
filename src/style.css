@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(Rubik-Regular.ttf;)
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(Rubik-Medium.ttf;)
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(Rubik-Bold.ttf;)
+}
+
+body {
+    background-color: #FF5A3C;
+}
+
+a {
+    font-family: "Rubik-Regular";
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+p {
+    font-family: "Rubik-Regular";
+    color: white;
+}
+
+h1 {
+    font-family: "Rubik-Bold";
+    color: white;
+    font-size: 140px;
+    margin: 0;
+}
+
+/*main div's*/
+
+.intro-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.nav-link {
+    margin-right: 10px;
+}
+
+.nav a#active {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.title {
+    padding-top: 120px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.medium {
+    font-family: "Rubik";
+}
+.image {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+}
+
+#titleimage {
+    width: 600px;
+}
+
+.content {
+  margin-left: 50px;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+
+  .animate {
+    -webkit-animation-duration: 1;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
