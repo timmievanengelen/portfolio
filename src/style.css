@@ -1,89 +1,108 @@
 @font-face {
-    font-family: Rubik-Regular;
-    src: url(Rubik-Regular.ttf;)
+  font-family: Rubik-Regular;
+  src: url(Rubik-Regular.ttf;)
 }
 
 @font-face {
-    font-family: Rubik-Medium;
-    src: url(Rubik-Medium.ttf;)
+  font-family: Rubik-Medium;
+  src: url(Rubik-Medium.ttf;)
 }
 
 @font-face {
-    font-family: Rubik-Bold;
-    src: url(Rubik-Bold.ttf;)
+  font-family: Rubik-Bold;
+  src: url(Rubik-Bold.ttf;)
 }
 
 body {
-    background-color: #FF5A3C;
+  /*background-color: #FF5A3C;*/
+  margin: 0;
 }
 
 a {
-    font-family: "Rubik-Regular";
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+  font-family: "Rubik-Regular";
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
-a:hover {
-    color: lightgray;
-    border-bottom: 2px solid lightgray;
+nav a:hover {
+  color: lightgray;
+  border-bottom: 2px solid lightgray;
 }
 
 p {
-    font-family: "Rubik-Regular";
-    color: white;
+  font-family: "Rubik-Regular";
+  color: white;
 }
 
 h1 {
-    font-family: "Rubik-Bold";
-    color: white;
-    font-size: 140px;
-    margin: 0;
+  font-family: "Rubik-Bold";
+  color: white;
+  font-size: 140px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Rubik-Bold";
+  color: white;
+  font-size: 28px;
+  margin: 0;
 }
 
 /*main div's*/
 
+.main-content {
+  background-color: #FF5A3C;
+  margin: 2%;
+  padding-bottom: 50px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
 .intro-wrapper {
   height: 100vh;
-  width: 100%;
+  width: 96%;
   position: relative;
 }
 
 .nav {
-    z-index: 100;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin-right: 50px;
-    margin-top: 50px;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-right: 50px;
+  margin-top: 50px;
+  background-color: #FF5A3C;
+  padding: 10px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .nav-link {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .nav a#active {
-    border-bottom: 2px solid white;
-    color: white;
+  border-bottom: 2px solid white;
+  color: white;
 }
 
 .title {
-    padding-top: 120px;
-    padding-left: 50px;
-    position: relative;
+  padding-top: 25vh;
+  padding-left: 50px;
+  position: relative;
 }
 
 .medium {
-    font-family: "Rubik";
+  font-family: "Rubik";
 }
+
 .image {
-    position: absolute;
-    right: 50px;
-    top: 120px;
+  position: absolute;
+  right: 20px;
+  top: 20vh;
 }
 
 #titleimage {
-    width: 600px;
+  width: 600px;
 }
 
 .content {
@@ -91,72 +110,155 @@ h1 {
 }
 
 @-webkit-keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 
-  @-webkit-keyframes fadeInRight {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
-  
-  .fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
+}
 
-  .fadeInRight {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-  }
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
 
-  .animate {
-    -webkit-animation-duration: 1;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.animate {
+  -webkit-animation-duration: 1;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*slideshow*/
+
+.slideshow-parent {
+  display: flex;
+}
+
+.slideshow-container {
+  margin-top: 5px;
+  margin-left: 50px;
+  max-width: 1000px;
+  width: 50vw;
+  position: relative;
+  flex: 0 0 50%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
   }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
+  }
+}
+
+.slideshow-text {
+  padding: 50px;
+  flex: 2;
+}
